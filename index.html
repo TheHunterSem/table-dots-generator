@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&amp;subset=cyrillic-ext"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+
+    <div class="table-wrapper">
+
+        <div class="table-wrapper-content">
+
+            <div class="table-dots-wrapper">
+                <div class="table-row">
+                    <div class="left-side">
+                        <div class="title text"></div>
+                    </div>
+                    <div class="right-side">
+                        <div class="content text">
+
+                        </div>
+                    </div>
+                    <span class="del"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="buttons-block-row">
+            <button id="add_row" class="button add_row" title="Add new row"><i class="material-icons">add_circle</i></button>
+            <button id="remove_row" class="button remove_row" title="Remove row"><i class="material-icons">remove_circle</i></button>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="generated_html_wrapper" class="generated_html_wrapper">
+    <div class="generated_html_content">
+        <p id="lol_text"></p>
+        <button type="button" class="html_generator_close button" onclick="ClearGenerateHtml()"><i class="material-icons">close</i></button>
+    </div>
+</div>
+
+<button type="button" class="html_generator button" onclick="GenerateHtml()">Generate HTML</button>
+
+
+
+<script>
+    function GenerateHtml() {
+        var html = $('.table-wrapper-content').html();
+        $('#lol_text').text(html);
+        $('#generated_html_wrapper').fadeIn(300);
+    }
+
+    function ClearGenerateHtml() {
+        $('#generated_html_wrapper').fadeOut(300);
+        setTimeout(function() {
+            $('#lol_text').text('');
+        }, 300);
+    }
+</script>
+
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

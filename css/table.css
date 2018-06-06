@@ -1,0 +1,43 @@
+/*Table styles start*/
+
+.table-dots-wrapper {
+    width: 100%;
+}
+
+.table-dots-wrapper .table-row {
+    margin-bottom: 70px;
+}
+
+.table-dots-wrapper .left-side {
+    position: relative;
+    width: 35%;
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+    padding-right: 50px;
+}
+
+.table-dots-wrapper .right-side {
+    position: relative;
+    width: 65%;
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+}
+
+.table-dots-wrapper .left-side .title {
+    font-size: 17px;
+    font-weight: bold;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 4px dotted;
+    padding-bottom: 15px;
+}
+
+.table-dots-wrapper .right-side .content {
+    font-size: 17px;
+    line-height: 26px;
+}
+
+/*Table styles end*/
