@@ -5,7 +5,11 @@
 }
 
 .table-dots-wrapper .table-row {
-    margin-bottom: 70px;
+    margin-bottom: 55px;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
 }
 
 .table-dots-wrapper .left-side {
@@ -38,6 +42,27 @@
 .table-dots-wrapper .right-side .content {
     font-size: 17px;
     line-height: 26px;
+}
+
+@media screen and (max-width: 970px) {
+
+    .table-dots-wrapper .table-row {
+        flex-wrap: wrap;
+    }
+
+    .table-dots-wrapper .left-side {
+        width: 100%;
+        padding: 0;
+        float: none;
+    }
+
+    .table-dots-wrapper .right-side {
+        float: none;
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+
 }
 
 /*Table styles end*/
