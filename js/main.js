@@ -17,9 +17,9 @@ jQuery(document).ready(function ($) {
        var text = prompt("Input the text:", '');
        if (text === null) {
            var thisText = $('.text',this).text();
-           $('.text',this).text(thisText);
+           $('.text',this).html(thisText);
        } else {
-           $('.text',this).text(text);
+           $('.text',this).html(text);
        }
    });
 
